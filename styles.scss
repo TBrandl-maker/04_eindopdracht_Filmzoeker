@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    margin:0;
+}
+
+.menu {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: auto;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+
+#movies-in-general {
+    padding: 0;
+    margin: auto;
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    transition-duration: 250ms all;
+    li {
+        padding: 1vw;
+        :hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        
+        img {
+            width: 16vw;
+        }
+    }
+}
+
+#Search-Field {
+    display: flex;
+}
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filmzoeker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <script defer type="text/javascript" src="movies.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <header class="menu">
+        <h2>Welkom bij de Winc Filmzoeker</h2>
+        <nav>
+            <label for="nieuwste-films">
+                <input type="radio" id="nieuw" name="film-filter" value="nieuwste-films">
+                Laatse films, 2014 of nieuwer
+            </label>
+            <label for="avenger-films">
+                <input type="radio" id="avengers" name="film-filter" value="avenger-films">
+                Avenger Films
+            </label>
+            <label for="x-men-films">
+                <input type="radio" id="x-men" name="film-filter" value="x-men-films">
+                X-Men Films
+            </label>
+            <label for="princess-films">
+                <input type="radio" id="princess" name="film-filter" value="princess-films">
+                Princess Films
+            </label>
+            <label for="batman-films">
+                <input type="radio" id="batman" name="film-filter" value="batman-films">
+                Batman Films
+            </label>
+            <div id="Search-Field">
+                <input type="text" id="search" name="search-bar" placeholder="Zoek op titelnaam">
+                <i class="material-icons">search</i>
+            </div>
+        </nav>
+        <div>
+            <ul id="movies-in-general">
+            </ul>
+        </div>
+</body>
+
+</html>
